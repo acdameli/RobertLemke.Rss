@@ -33,7 +33,7 @@ class Item
     protected $commentsLink;
 
     /**
-     * @var \DateTime
+     * @var \DateTimeInterface
      */
     protected $publicationDate;
 
@@ -184,16 +184,16 @@ class Item
     }
 
     /**
-     * @param \DateTime $publicationDate
+     * @param \DateTimeInterface $publicationDate
      * @return void
      */
-    public function setPublicationDate(\DateTime $publicationDate = null)
+    public function setPublicationDate(\DateTimeInterface $publicationDate = null)
     {
         $this->publicationDate = $publicationDate;
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTimeInterface
      */
     public function getPublicationDate()
     {
